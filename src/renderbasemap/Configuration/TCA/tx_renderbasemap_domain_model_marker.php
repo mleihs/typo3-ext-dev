@@ -15,17 +15,9 @@ return [
         'typeicon_classes' => [
             'default' => 'content-marker'
         ],
-        'hideTable' => true,
+        'hideTable' => false,
     ],
     'columns' => [
-        'map' => [
-            'label' => 'Map',
-            'config' => [
-                'type'  => 'select',
-                'renderType' => 'selectSingle',
-                'foreign_table' => 'tx_renderbasemap_domain_model_map',
-            ],
-        ],
         'lat' => [
             'label' => 'Lat',
             'config' => [
@@ -51,7 +43,6 @@ return [
             ],
         ],
     ],
-
     'palettes' => [
         'latlon' => [
             'showitem' => 'lat, lon'
@@ -61,7 +52,6 @@ return [
         '1' => [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-                map,
                 title,
                 description,
                 --palette--;;latlon,

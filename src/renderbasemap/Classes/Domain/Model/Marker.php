@@ -2,11 +2,9 @@
 
 namespace Mleihs\Typo3ExtDev\Domain\Model;
 
-use Exception;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class Marker extends AbstractEntity {
-    protected ?Map $map = null;
     protected string $lat = '';
     protected string $lon = '';
     protected string $title = '';
@@ -104,34 +102,6 @@ class Marker extends AbstractEntity {
     public function setLat(string $lat): self
     {
         $this->lat = $lat;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of map
-     *
-     * @return Map
-     */
-    public function getMap(): Map
-    {
-        if ($this->map === null) {
-            throw new Exception();
-        }
-
-        return $this->map;
-    }
-
-    /**
-     * Set the value of map
-     *
-     * @param Map $map
-     *
-     * @return self
-     */
-    public function setMap(Map $map): self
-    {
-        $this->map = $map;
 
         return $this;
     }

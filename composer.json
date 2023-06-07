@@ -27,7 +27,8 @@
         "typo3/cms-redirects": "^11.5",
         "typo3/cms-setup": "^11.5",
         "mleihs/renderbasemap": "@dev",
-        "typo3/cms-lowlevel": "^11.5"
+        "typo3/cms-lowlevel": "^11.5",
+        "typo3/cms-seo": "^11.5"
     },
 
     "repositories": {

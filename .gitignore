@@ -4,3 +4,4 @@ node_modules
 sysext
 /public/**/*
 !/public/typo3conf/LocalConfiguration.php
+docker-compose.*.local.yaml

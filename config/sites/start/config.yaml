@@ -14,4 +14,12 @@ languages:
     flag: us
     websiteTitle: ''
 rootPageId: 1
-websiteTitle: 'Typo3 Ext Dev'
+websiteTitle: 'Typo3 Ext Deelopment'
+basemap:
+  apis:
+    map:
+      username: test@testdomain.de
+      password: '%env(TYPO3_BASEMAP_GMAIL_PASSWORD)%'
+imports:
+  -
+    resource: 'EXT:renderbasemap/Configuration/Routing/Routing.yaml'

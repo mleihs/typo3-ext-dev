@@ -1,0 +1,15 @@
+routeEnhancers:
+  RenderbasemapMapList:
+    type: Extbase
+    extension: Renderbasemap
+    plugin: MapList
+    routes:
+      - routePath: '/karte/{map_title}'
+        _controller: 'Map::show'
+        _arguments:
+          map_title: map
+    aspects:
+      map_title:
+        type: PersistedAliasMapper
+        tableName: 'tx_renderbasemap_domain_model_map'
+        routeFieldName: 'slug'

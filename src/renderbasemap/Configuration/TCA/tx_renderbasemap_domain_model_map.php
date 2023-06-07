@@ -104,14 +104,9 @@ return [
         'markers' => [
             'label' => 'Markers',
             'config' => [
-                'type' => 'inline',
+                'type' => 'select',
+                'renderType' => 'selectMultipleSideBySide',
                 'foreign_table' => 'tx_renderbasemap_domain_model_marker',
-                'foreign_field' => 'map',
-                'appearance' => [
-                    'showSynchronizationLink' => true,
-                    'showAllLocalizationLink' => true,
-                    'showPossibleLocalizationRecords' => true,
-                ],
             ],
         ],
         'width' => [
@@ -126,6 +121,22 @@ return [
             'config' => [
                 'type'  => 'input',
                 'eval' => 'int',
+            ],
+        ],
+        'slug' => [
+            'label' => 'URL-Segment',
+            'config' => [
+                'type'  => 'slug',
+                'generatorOptions' => [
+                    'fields' => [
+                        'title',
+                    ],
+                    'fieldSeparator' => '/',
+                    'prefixParentPageSlug' => true,
+                ],
+                'fallbackCharacter' => '-',
+                'eval' => 'uniqueInSite',
+                'default' => '',
             ],
         ],
     ],
@@ -148,6 +159,7 @@ return [
             'showitem' => '
                 --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 title,
+                slug,
                 --palette--;Coordinates;latlon,
                 --palette--;;size,
                 zoom,
