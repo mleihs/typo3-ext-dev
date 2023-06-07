@@ -1,0 +1,32 @@
+<f:asset.script
+    identifier="renderbasemap_leaflet_js"
+    src="EXT:renderbasemap/node_modules/leaflet/dist/leaflet.js"
+/>
+<f:asset.script
+    identifier="renderbasemap_leaflet_integration"
+    src="EXT:renderbasemap/Resources/Public/JavaScript/Leaflet.js"
+/> 
+<f:asset.css
+    identifier="renderbasemap_leaflet_css"
+    href="EXT:renderbasemap/node_modules/leaflet/dist/leaflet.css"
+/> 
+
+Karte "{map.title}"
+
+<div
+    data-map="{map.uid}"
+    data-lat="{map.lat}"
+    data-lon="{map.lon}"
+    data-zoom="{map.zoom}"
+
+    style="width: {map.width}px; height: {map.height}px;"
+>
+    <f:for each="{map.markers}" as="marker">
+        <div
+            data-marker="{marker.uid}"
+            data-lat="{marker.lat}"
+            data-lon="{marker.lon}"
+            data-title="{marker.title}"
+        ></div>
+    </f:for>
+</div>

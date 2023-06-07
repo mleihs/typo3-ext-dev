@@ -1,0 +1,10 @@
+Karten:
+<ul>
+    <f:for each="{maps}" as="map">
+        <li>
+            <f:link.action action="show" arguments="{map: map}">
+                {map.title}
+            </f:link.action>
+        </li>
+    </f:for>
+</ul>

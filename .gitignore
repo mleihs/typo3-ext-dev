@@ -1,0 +1,6 @@
+/vendor/
+node_modules
+/var/
+sysext
+/public/**/*
+!/public/typo3conf/LocalConfiguration.php

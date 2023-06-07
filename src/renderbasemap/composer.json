@@ -1,0 +1,16 @@
+{
+    "name": "mleihs/renderbasemap",
+    "type": "extension",
+    "authors": [
+        {
+            "name": "DDEV User",
+            "email": "nobody@example.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mleihs\\Typo3ExtDev\\": "Classes"
+        }
+    }
+}

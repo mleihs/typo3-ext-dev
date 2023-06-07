@@ -1,0 +1,45 @@
+{
+    "name": "mleihs/typo3-ext-dev",
+    "type": "sitepackage",
+    "authors": [
+        {
+            "name": "DDEV User",
+            "email": "nobody@example.com"
+        }
+    ],
+    "require": {
+        "typo3/minimal": "^11.5",
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-fluid-styled-content": "^11.5",
+        "typo3/cms-scheduler": "^11.5",
+        "typo3/cms-beuser": "^11.5",
+        "typo3/cms-filemetadata": "^11.5",
+        "typo3/cms-form": "^11.5",
+        "typo3/cms-recycler": "^11.5",
+        "typo3/cms-tstemplate": "^11.5",
+        "typo3/cms-recordlist": "^11.5",
+        "typo3/cms-info": "^11.5",
+        "typo3/cms-reports": "^11.5",
+        "typo3/cms-t3editor": "^11.5",
+        "typo3/cms-rte-ckeditor": "^11.5",
+        "typo3/cms-adminpanel": "^11.5",
+        "typo3/cms-belog": "^11.5",
+        "typo3/cms-redirects": "^11.5",
+        "typo3/cms-setup": "^11.5",
+        "mleihs/renderbasemap": "@dev",
+        "typo3/cms-lowlevel": "^11.5"
+    },
+
+    "repositories": {
+        "0": {
+            "type": "path",
+            "url": "src/*"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
+    }
+}

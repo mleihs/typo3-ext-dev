@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Map Detail</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.mapUid>
+                        <TCEforms>
+                            <label>Map to display</label>
+							<config>
+								<type>select</type>
+								<renderType>selectSingle</renderType>
+                                <foreign_table>tx_renderbasemap_domain_model_map</foreign_table>
+							</config>
+                        </TCEforms>
+                    </settings.mapUid>
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

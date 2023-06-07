@@ -1,0 +1,11 @@
+{
+  "name": "renderbasemap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "GPLv2",
+  "dependencies": {
+    "leaflet": "1.4.0"
+  }
+}
